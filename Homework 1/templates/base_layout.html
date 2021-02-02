@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework 1</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                background-image: url('https://cutewallpaper.org/21/free-gif-backgrounds/Galaxy-Clouds-Tumblr-Free-Blue-Hipster-Backgrounds-With-Cute-.gif');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                position: relative; 
+            }
+            
+            /* card */
+            .touch {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .touch .card {
+                border: black;
+                border-radius: 1rem;
+                border-style:solid;
+            }
+
+            footer {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+        
+                width: 100%;
+       
+            }
+        </style>
+    </head>
+    <body>
+        {% include './includes/_navbar.html' %}
+
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
+        {% include './includes/footer.html' %}
+
+        
+    </body>
+</html>
